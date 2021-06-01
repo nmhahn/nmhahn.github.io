@@ -2,7 +2,7 @@ name: "nmhahn.github.io"
 title: "Nicolas Hahn"
 description: |
   Nicolas Hahn
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
