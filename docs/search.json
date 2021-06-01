@@ -6,7 +6,15 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T15:48:45-03:00"
+      "last_modified": "2021-06-01T15:55:20-03:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog do Nicão",
+      "description": "Welcome to the BLOG. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-01T15:55:21-03:00"
     },
     {
       "path": "index.html",
@@ -14,7 +22,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T15:48:46-03:00"
+      "last_modified": "2021-06-01T15:55:23-03:00"
     }
   ],
   "collections": ["posts/posts.json"]
