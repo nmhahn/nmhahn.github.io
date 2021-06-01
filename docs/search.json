@@ -2,18 +2,19 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
-      "description": "Some additional details about the blog",
+      "title": "About this site",
+      "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T15:19:14-03:00"
+      "last_modified": "2021-06-01T15:48:45-03:00"
     },
     {
       "path": "index.html",
       "title": "Nicolas Hahn",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T15:19:18-03:00"
+      "last_modified": "2021-06-01T15:48:46-03:00"
     }
   ],
   "collections": ["posts/posts.json"]
