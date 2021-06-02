@@ -11,9 +11,14 @@ navbar:
       href: about.html
     - text: "Blog"
       href: blog.html
+    - text: "CV"
+      href: https://github.com/nmhahn/NMH_CV/blob/master/CV/NMH_Curriculum_Vitae.pdf
+    - text: "Portfolio"
+    - text: "Contato"
 base_url: "https://nmhahn.github.io/"
 collections:
   posts:
+    share: [twitter, linkedin, facebook]
     disqus:
       shortname: nmhahn
       hidden: false

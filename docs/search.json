@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T23:07:57-03:00"
+      "last_modified": "2021-06-02T00:04:56-03:00"
     },
     {
       "path": "blog.html",
@@ -14,7 +14,7 @@
       "description": "Welcome to the BLOG. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T23:07:44-03:00"
+      "last_modified": "2021-06-02T00:05:08-03:00"
     },
     {
       "path": "index.html",
@@ -22,7 +22,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-01T23:23:31-03:00"
+      "last_modified": "2021-06-02T00:04:18-03:00"
     }
   ],
   "collections": ["posts/posts.json"]
