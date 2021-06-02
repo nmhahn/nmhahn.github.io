@@ -1,0 +1,180 @@
+---
+title: "Juros Simples ou Compostos Visualize a Diferenca"
+description: |
+  Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: **Matemática Financeira!**
+author:
+  - name: Nicolas Hahn
+    url: {}
+date: 06-01-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: **Matemática Financeira!**
+
+Promoções, descontos, parcelamentos, empréstimos, financianciamentos, investimentos. Nosso mundo gira muito em torno desses e outros itens que afetam diretamente nossas compras e vendas - e consequentemente, nosso bolso. Além disso, lidar com bancos e instituições financeiras é recorrente na atualidade e, devido a isso, entender o comportamento dos famosos **JUROS** é importante para que tenhamos uma boa saúde financeira. Portanto, meu povo e minha pova, vou tentar demonstrar para vocês como eles funcionam.
+
+# Juros
+> **Exemplo:** Considere que você solicite um empréstimo de R\\$50,00 para seu amigo. Para convencê-lo a lhe emprestar, você informa que irá pagá-lo com juros de R\\$10,00. Logo, você pagará ao seu amigo o valor de R\\$60,00.
+
+Basicamente, os **juros** nada mais são do que uma remuneração cobrada pelo empréstimo do dinheiro (ou outro item) - se preferir, considere como uma espécie de "aluguel" do dinheiro. Observando o exemplo, vamos analisar pela fórmula:
+
+\[
+\begin{split}
+  Valor Futuro (VF) & = Valor Presente(VP) + Juros(J) \\
+                    & = 50 + 10 \\
+                    & = 60
+\end{split}
+\]
+
+Normalmente, os juros são expressos como um percentual (a famosa **taxa de juros**) e podem ser calculados de duas formas: simples ou compostos.
+
+## Juros Simples
+Nesse caso, a taxa de juros é aplicada sempre sobre o valor inicial ou presente ($VP$) em todos os períodos (dias, meses, anos).
+
+> **Exemplo:** Considere que você solicite um empréstimo de R\\$1000,00 e que irá pagar em 12 meses. A taxa de juros que será cobrada será de 10\% ao mês no regime de juros simples. Quanto você irá pagar após os 12 meses?
+
+Irei demonstrar em 3 partes: 
+
+* como calcular a dívida com a fórmula;
+* a evolução da dívida por meio de uma tabela;
+* o gráfico para visualizar o crescimento da dívida.
+
+Primeiro, vale lembrar que $10\% = \frac{10}{100} = 0.10$.
+
+\[
+  \begin{split}
+  VF & = VP \times (1 + taxadejuros(i) \times tempo(t)) \\
+                    & = 1000 \times (1 + 0.10 \times 12) \\
+                    & = 1000 \times (1 + 1,2) \\
+                    & = 1000 + 1200 \\
+                    & = 2200 \\
+\end{split}
+\]
+
+Como foi visto pela fórmula, seria pago o valor de R\\$2200,00. Agora, vamos ver a evolução da dívida por meio uma tabela e de um gráfico.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+df = data.frame(mes=0:12,vf=NA)
+df$mes = as.factor(df$mes)
+n = nrow(df)
+
+vp = 1000
+i = 0.10
+t = 12
+vf = 0
+
+df$vf[1] = vp
+
+for (j in 2:n){
+  vf = df$vf[j-1] + vp*(1+i) - vp
+  df$vf[j] = vf
+}
+
+df2 = df
+colnames(df2) = c("Mês","Valor Futuro (em R$)")
+kable(df2)
+
+library(ggplot2)
+
+ggplot(data=df, aes(x=mes, y=vf, group=1)) +
+  geom_line(size=2) + 
+  ggtitle("Dívida após 12 meses") +
+  xlab("Mês") + ylab("Valor Futuro")
+```
+
+
+## Juros Compostos
+Nesse caso, a taxa de juros é aplicada sempre sobre o valor futuro do período anterior. É por causa disso que esse regime de juros (que é o mais comum em nossos dias de hoje) entra em uma "bola de neve". Vamos utilizar o mesmo exemplo anterior, mas com juros compostos: 
+
+> **Exemplo:** Considere que você solicite um empréstimo de R\\$1000,00 e que irá pagar em 12 meses. A taxa de juros que será cobrada será de 10\% ao mês no regime de juros compostos. Quanto você irá pagar após os 12 meses?
+
+Novamente, começaremos pela fórmula:
+
+\[
+  \begin{split}
+  VF & = VP \times (1 + i)^t \\
+     & = 1000 \times (1 + 0.10)^{12} \\
+     & = 1000 \times (1.10)^{12} \\
+     & = 1000 \times 3,138428 \\
+     & = 3138,43 \\
+\end{split}
+\]
+ 
+Como foi visto pela fórmula, seria pago o valor de R\\$3138,43. Agora, vamos ver a evolução da dívida por meio uma tabela e de um gráfico. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df = data.frame(mes=0:12,vf=NA)
+df$mes = as.factor(df$mes)
+n = nrow(df)
+
+vp = 1000
+i = 0.10
+t = 12
+vf = vp
+
+df$vf[1] = vp
+
+for (j in 2:n){
+  vf = vf*(1+i)
+  df$vf[j] = vf
+}
+
+df$vf = round(df$vf,2)
+
+df2 = df
+colnames(df2) = c("Mês","Valor Futuro (em R$)")
+kable(df2)
+
+ggplot(data=df, aes(x=mes, y=vf, group=1)) +
+  geom_line(size=2) + 
+  ggtitle("Dívida após 12 meses") +
+  xlab("Mês") + ylab("Valor Futuro")
+```
+
+# Comparando
+
+Para facilitar, creio que é válido colocar os números lado a lado.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df = data.frame(mes=0:12,vf1=NA, vf2=NA)
+df$mes = as.factor(df$mes)
+n = nrow(df)
+
+vp = 1000
+i = 0.10
+t = 12
+vf1 = vp; df$vf1[1] = vp
+vf2 = vp; df$vf2[1] = vp
+
+for (j in 2:n){
+  
+  # juros simples
+  vf1 = vf1 + vp*(i)
+  df$vf1[j] = vf1
+  # juros compostos
+  vf2 = vf2*(1+i)
+  df$vf2[j] = vf2
+}
+
+df$vf1 = round(df$vf1,2)
+df$vf2 = round(df$vf2,2)
+
+df2 = df
+colnames(df2) = c("Mês","Dívida (Juros Simples)","Dívida (Juros Compostos)")
+kable(df2)
+
+ggplot(data=df, aes(x=mes, group=1)) +
+  geom_line(aes(y=vf1, color="Simples"), size=2) +
+  geom_line(aes(y=vf2, color="Compostos"), size=2) +
+  scale_colour_manual("", 
+                      breaks = c("Simples", "Compostos"),
+                      values = c("Simples"="blue", "Compostos"="red")) +
+  ggtitle("Dívida após 12 meses") +
+  xlab("Mês") + ylab("Valor Futuro")
+```
+
+Em suma, é isso sobre os juros. Eles podem tanto serem usados a nosso favor (multiplicando nosso dinhero, no caso de investimentos), bem como contra nós (multiplicando nossa dívida, no caso de atrasos de pagamentos). Àqueles que chegaram até aqui, agradeço a atenção. Quaisquer dúvidas, sugestões e críticas que tiverem, por favor deixem nos comentários. Vou adorar o feedback!

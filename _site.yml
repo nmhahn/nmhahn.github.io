@@ -11,4 +11,10 @@ navbar:
       href: about.html
     - text: "Blog"
       href: blog.html
+base_url: "https://nmhahn.github.io/"
+collections:
+  posts:
+    disqus:
+      shortname: nmhahn
+      hidden: true
 output: distill::distill_article
