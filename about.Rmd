@@ -1,10 +1,22 @@
 ---
-title: "About this site"
+title: "Sobre Mim"
 description: |
-  Some additional details about the website
+  Um pouco sobre o autor deste site :D
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+<style>
+body {text-align: justify}
+</style>
+
+Meu nome é Nicolas Mathias Hahn e sou estudante do curso de bacharelado em Estatística na Universidade Federal do Rio Grande do Sul. Eu adoro explorar os dados e extrair deles conhecimento que realmente geram valor. Estamos em uma era em que todos produzimos e consumimos dados constantemente, mas do que adianta tudo isso se não utilizarmos a nosso favor?
+
+# Um pouco da minha história até aqui
+
+Desde pequeno, fui muito estimulado a desenvolver meu lado analítico e criativo: joguei xadrez, estudei música, aprendi filosofia, um pouco de mitologia, joguei videogame, etc. Jamais perdi contato com nenhuma dessas atividades. No colégio, gostava de praticamente todas as matérias, mas eu tinha minha favorita: **Matemática**!
+
+Na reta final do ensino médio e preparatório para ENEM e Vestibulares, meu objetivo era encontrar um curso (e consequentemente, uma profissão) que me permitisse unir o máximo dessas atividades e conhecimentos de forma útil. Tinha optado, na época, por Psicologia, pois acreditava que seria a forma perfeita de atingir meu objetivo. No entanto, sempre ficava pensativo sobre a falta de contato que teria com as exatas.
+
+Para minha (agradável) surpresa, um professor de português realizou o seguinte comentário antes de iniciar sua aula: "Para quem ainda não decidiu o que vai cursar, a Estatística parece bem promissora, ainda mais com o crescente volume de dados que estamos tendo" (por volta de metade de 2017). Eu, assim como alguns colegas, ficamos curiosos e questionamos. Foi nessa hora que ele deu a melhor explicação com a qual tive contato da área.
+
+> "Todos geramos dados o tempo todo, com nossos celulares, computadores. **Eu gosto de pensar nesses dados todos como um dicionário. É possível extrair muita informação útil dele, mas se eu não souber lê-lo, de nada adianta. Então, o Estatístico é aquele que sabe ler o dicionário**".
 

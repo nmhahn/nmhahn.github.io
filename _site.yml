@@ -1,13 +1,11 @@
 name: "nmhahn.github.io"
-title: "Nicolas Hahn"
+title: "Nicolas Mathias Hahn"
 description: |
-  Calopsita
+  TESTANDO UM SITE SIMPLES
 output_dir: "docs"
 navbar:
-  right:
-    - text: "Home"
-      href: index.html
-    - text: "About"
+  left:
+    - text: "Sobre"
       href: about.html
     - text: "Blog"
       href: blog.html
