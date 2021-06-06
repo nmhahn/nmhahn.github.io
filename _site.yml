@@ -1,7 +1,7 @@
 name: "nmhahn.github.io"
 title: "NMHahn"
 description: |
-  TESTANDO UM SITE SIMPLES
+  Explorando algumas possibilidades com R.
 output_dir: "docs"
 navbar:
   right:
@@ -10,7 +10,7 @@ navbar:
 #    - text: "Blog"
 #      href: blog.html
     - text: "CV"
-      href: C:/Users/nicol/OneDrive/Documentos/NMH_CV/CV/NMH_Curriculum_Vitae.pdf
+      href: CV/NMH_Curriculum_Vitae.pdf
     - text: "Portfolio"
     - text: "Contato"
 base_url: "https://nmhahn.github.io/"
