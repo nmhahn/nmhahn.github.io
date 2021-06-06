@@ -4,7 +4,7 @@ description: |
   TESTANDO UM SITE SIMPLES
 output_dir: "docs"
 navbar:
-  left:
+  right:
     - text: "Sobre"
       href: about.html
     - text: "Blog"

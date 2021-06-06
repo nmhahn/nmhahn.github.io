@@ -1,16 +1,17 @@
 ---
-title: "Sobre Mim"
+title: | 
+  Sobre Mim 
 description: |
-  Um pouco sobre o autor deste site :D
+  ![](`r here::here("img","perfil.jpg")`){ width=50% }
+  
+  Meu nome é Nicolas Mathias Hahn e sou estudante do curso de bacharelado em Estatística na Universidade Federal do Rio Grande do Sul (UFRGS). Eu adoro explorar os dados e extrair deles conhecimento que realmente geram valor. Estamos em uma era em que todos produzimos e consumimos dados constantemente, mas do que adianta tudo isso se não utilizarmos a nosso favor? 
 ---
 
 <style>
 body {text-align: justify}
 </style>
 
-Meu nome é Nicolas Mathias Hahn e sou estudante do curso de bacharelado em Estatística na Universidade Federal do Rio Grande do Sul. Eu adoro explorar os dados e extrair deles conhecimento que realmente geram valor. Estamos em uma era em que todos produzimos e consumimos dados constantemente, mas do que adianta tudo isso se não utilizarmos a nosso favor?
-
-# Um pouco da minha história até aqui
+# Um pouco da minha história
 
 Desde pequeno, fui muito estimulado a desenvolver meu lado analítico e criativo: joguei xadrez, estudei música, aprendi filosofia, um pouco de mitologia, joguei videogame, etc. Jamais perdi contato com nenhuma dessas atividades. No colégio, gostava de praticamente todas as matérias, mas eu tinha minha favorita: **Matemática**!
 
@@ -19,4 +20,9 @@ Na reta final do ensino médio e preparatório para ENEM e Vestibulares, meu obj
 Para minha (agradável) surpresa, um professor de português realizou o seguinte comentário antes de iniciar sua aula: "Para quem ainda não decidiu o que vai cursar, a Estatística parece bem promissora, ainda mais com o crescente volume de dados que estamos tendo" (por volta de metade de 2017). Eu, assim como alguns colegas, ficamos curiosos e questionamos. Foi nessa hora que ele deu a melhor explicação com a qual tive contato da área.
 
 > "Todos geramos dados o tempo todo, com nossos celulares, computadores. **Eu gosto de pensar nesses dados todos como um dicionário. É possível extrair muita informação útil dele, mas se eu não souber lê-lo, de nada adianta. Então, o Estatístico é aquele que sabe ler o dicionário**".
+
+# Onde estou
+
+* Cursando o 7º semestre do curso de Estatística na UFRGS;
+* Estagiando na [Aegro](https://aegro.com.br/) na área de Sales Ops.
 
