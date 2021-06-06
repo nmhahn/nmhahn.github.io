@@ -1,5 +1,5 @@
 name: "nmhahn.github.io"
-title: "Nicolas Mathias Hahn"
+title: "NMHahn"
 description: |
   TESTANDO UM SITE SIMPLES
 output_dir: "docs"
@@ -7,10 +7,10 @@ navbar:
   right:
     - text: "Sobre"
       href: about.html
-    - text: "Blog"
-      href: blog.html
+#    - text: "Blog"
+#      href: blog.html
     - text: "CV"
-      href: https://github.com/nmhahn/NMH_CV/blob/master/CV/NMH_Curriculum_Vitae.pdf
+      href: C:/Users/nicol/OneDrive/Documentos/NMH_CV/CV/NMH_Curriculum_Vitae.pdf
     - text: "Portfolio"
     - text: "Contato"
 base_url: "https://nmhahn.github.io/"

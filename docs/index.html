@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
+  <link rel="alternate" type="application/rss+xml" href="https://nmhahn.github.io/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -84,29 +85,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Nicolas Mathias Hahn: Nicolas Hahn</title>
+  <title>NMHahn: Blog do Nicão</title>
   
-  <meta property="description" itemprop="description" content="Welcome to the website. I hope you enjoy it!"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Nicolas Mathias Hahn: Nicolas Hahn"/>
+  <meta property="og:title" content="NMHahn: Blog do Nicão"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Welcome to the website. I hope you enjoy it!"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Nicolas Mathias Hahn"/>
+  <meta property="og:site_name" content="NMHahn"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Nicolas Mathias Hahn: Nicolas Hahn"/>
-  <meta property="twitter:description" content="Welcome to the website. I hope you enjoy it!"/>
+  <meta property="twitter:title" content="NMHahn: Blog do Nicão"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Nicolas Hahn"]},{"type":"character","attributes":{},"value":["Welcome to the website. I hope you enjoy it!\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Blog do Nicão"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2052,12 +2050,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body>
+<body class="layout-listing">
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Nicolas Hahn","description":"Welcome to the website. I hope you enjoy it!","authors":[]}
+{"title":"Blog do Nicão","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2065,15 +2063,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">Nicolas Mathias Hahn</a>
-<a href="about.html">Sobre</a>
-<a href="blog.html">Blog</a>
-<a href="https://github.com/nmhahn/NMH_CV/blob/master/CV/NMH_Curriculum_Vitae.pdf">CV</a>
-<span class="nav-dropdown-header">Portfolio</span>
-<span class="nav-dropdown-header">Contato</span>
+<a href="index.html" class="title">NMHahn</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
+<a href="about.html">Sobre</a>
+<a href="C:/Users/nicol/OneDrive/Documentos/NMH_CV/CV/NMH_Curriculum_Vitae.pdf">CV</a>
+<span class="nav-dropdown-header">Portfolio</span>
+<span class="nav-dropdown-header">Contato</span>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2081,12 +2078,204 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
+<!--radix_placeholder_article_listing-->
+
+
+<script type="application/javascript">
+
+function init_posts_list() {
+
+  function load_image(img) {
+    var src = $(img).attr('data-src');
+    if (src) {
+      $(img).attr('src', src);
+      $(img).load(function() {
+        img.removeAttribute('data-src');
+      });
+    }
+  }
+
+  function set_posts_visible(posts, visible) {
+    if (visible) {
+
+      // show bottom border by default
+      $(posts).removeClass('post-preview-last');
+
+      // apply limits if need be
+      var max_posts = 25;
+      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
+      if (apply_limits && posts.length > max_posts) {
+        posts = $(posts).slice(0, max_posts);
+      } else {
+        $('.posts-more a').addClass('hidden');
+      }
+
+      // apply last style
+      $(posts.slice(-1)[0]).addClass('post-preview-last');
+
+      $(posts).removeClass('hidden');
+      $(posts).find('img[data-src]').each(function(i, img) {
+        load_image(img);
+      });
+    } else {
+      $(posts).addClass('hidden');
+    }
+  }
+
+  function apply_hash_filter() {
+
+    // clear active state
+    $('.categories .active').removeClass('active');
+
+    // mark all posts invisible to start
+    set_posts_visible($('.posts-list').children('a'), false);
+
+    // if we have a hash filter
+    if (window.location.hash && window.location.hash.startsWith("#category:")) {
+
+      // mark posts that match the category visible
+      var page_category = window.location.hash.replace(/^#category:/, "");
+      var posts = $('.post-metadata').map(function(idx, script) {
+        var metadata = $.parseJSON($(script).html());
+        var post = null;
+        $.each(metadata.categories, function(idx, category) {
+          category = category.replace(/ /g,"_");
+          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
+            post = $(script).parent().get();
+            return false;
+          }
+        });
+        return post;
+      });
+      set_posts_visible(posts, true);
+
+      // mark the hash active
+      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
+
+      // update the list_caption
+      var list_caption = $('.posts-list-caption');
+      var caption = (page_category || '').toLowerCase() === "articles"
+        ? list_caption.attr('data-caption')
+        : ('Category: ' + page_category.replace(/_/g," "));
+      list_caption.text(caption);
+
+    } else {
+
+      // no hash filter, make all posts visible (subject to max display)
+      set_posts_visible($('.posts-list').children(), true);
+
+      // reset list caption
+      var list_caption = $('.posts-list-caption');
+      list_caption.text(list_caption.attr('data-caption'));
+
+
+    }
+  }
+
+  // more articles
+  function apply_post_limits(apply) {
+    if (apply) {
+      $('.posts-container').addClass('posts-apply-limit');
+      $('.posts-more a').removeClass('hidden');
+    } else {
+      $('.posts-container').removeClass('posts-apply-limit');
+      $('.posts-more a').addClass('hidden');
+    }
+  }
+
+  // click handling for tags
+  $('.dt-tag').click(function(ev) {
+    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
+    return false;
+  })
+
+  // hash filter handling
+  apply_hash_filter();
+  $(window).on('hashchange',function() {
+    apply_post_limits(true);
+    apply_hash_filter();
+  });
+
+  // more articles link
+  $('.posts-more a').click(function(e) {
+    e.preventDefault();
+    apply_post_limits(false);
+    apply_hash_filter();
+    return false;
+  });
+
+}
+
+</script>
+
+
+
+<div class="posts-container posts-apply-limit l-page">
+<div class="posts-list">
+<h1 class="posts-list-caption" data-caption="Blog do Nicão">Blog do Nicão</h1>
+<a href="posts/2021-06-01-a-estatistica-e-os-dados-decifrando-o-dialogo/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 1, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Nicolas Hahn</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-06-01-a-estatistica-e-os-dados-decifrando-o-dialogo/a-estatistica-e-os-dados-decifrando-o-dialogo_files/figure-html5/unnamed-chunk-2-1.png"/>
+</div>
+<div class="description">
+<h2>A Estatística e os Dados: decifrando o diálogo</h2>
+<div class="dt-tags"></div>
+<p>Quando eu entrei no curso de Estatística, uma das primeiras cadeiras que realizei como calouro era chamada de **Estatística Descritiva**. Com o tempo, aprendendo mais sobre a área de dados, entendi que aquela simples cadeira estava, na verdade, me ensinando o funcionamento do nosso mundo.</p>
+</div>
+</a>
+<a href="posts/2021-06-01-graficos-comuns-na-analise-de-dados/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 1, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Nicolas Hahn</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-06-01-graficos-comuns-na-analise-de-dados/graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-1-1.png"/>
+</div>
+<div class="description">
+<h2>Gráficos Comuns na Análise de Dados</h2>
+<div class="dt-tags"></div>
+<p>Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado.</p>
+</div>
+</a>
+<a href="posts/2021-06-01-juros-simples-ou-compostos-visualize-a-diferenca/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">June 1, 2021</div>
+<div class="dt-authors">
+<div class="dt-author">Nicolas Hahn</div>
+</div>
+</div>
+<div class="thumbnail">
+<img src="posts/2021-06-01-juros-simples-ou-compostos-visualize-a-diferenca/juros-simples-ou-compostos-visualize-a-diferenca_files/figure-html5/unnamed-chunk-1-1.png"/>
+</div>
+<div class="description">
+<h2>Juros Simples ou Compostos Visualize a Diferenca</h2>
+<div class="dt-tags"></div>
+<p>Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: **Matemática Financeira!**</p>
+</div>
+</a>
+</div>
+<div class="posts-more">
+<a href="#">More articles &raquo;</a>
+</div>
+</div>
+<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Nicolas Hahn</h1>
+<h1>Blog do Nicão</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Welcome to the website. I hope you enjoy it!</p></p>
+
 </div>
 
 

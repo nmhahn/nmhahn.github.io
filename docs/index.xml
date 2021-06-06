@@ -3,7 +3,7 @@
   <channel>
     <title>NMHahn</title>
     <link>https://nmhahn.github.io/</link>
-    <atom:link href="https://nmhahn.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://nmhahn.github.io/index.xml" rel="self" type="application/rss+xml"/>
     <description>TESTANDO UM SITE SIMPLES
 </description>
     <generator>Distill</generator>
