@@ -7,12 +7,12 @@ navbar:
   right:
     - text: "Sobre"
       href: about.html
-#    - text: "Blog"
-#      href: blog.html
     - text: "CV"
       href: CV/NMH_Curriculum_Vitae.pdf
-    - text: "Portfolio"
-    - text: "Contato"
+    - icon: fa fa-linkedin
+      href: https://linkedin.com/in/nmhahn
+    - icon: fa fa-github
+      href: https://github.com/nmhahn
 base_url: "https://nmhahn.github.io/"
 collections:
   posts:
@@ -21,4 +21,10 @@ collections:
       shortname: nmhahn
       hidden: false
 google_analytics: "UA-180942008-1"
+cookie_consent:
+  style: simple
+  type: express
+  palette: light
+  lang: pt
+  cookies_policy: url
 output: distill::distill_article

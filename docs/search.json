@@ -9,19 +9,11 @@
       "last_modified": "2021-06-06T13:50:38-03:00"
     },
     {
-      "path": "blog.html",
-      "title": "Blog do Nicão",
-      "description": "Welcome to the BLOG. I hope you enjoy it!\n",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-06T12:33:38-03:00"
-    },
-    {
       "path": "index.html",
       "title": "Blog do Nicão",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-06T13:58:56-03:00"
+      "last_modified": "2021-06-06T21:38:19-03:00"
     }
   ],
   "collections": ["posts/posts.json"]

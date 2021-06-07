@@ -2064,8 +2064,20 @@ document.addEventListener('DOMContentLoaded', function() {
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-<script type="text/javascript" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-180942008-1"></script>
-<script type="text/javascript" cookie-consent="tracking">
+<script type="text/javascript" src="https://www.cookieconsent.com/releases/3.1.0/cookie-consent.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+'notice_banner_type':'simple',
+'consent_type': 'express',
+'palette': 'light',
+'language': 'pt',
+'website_name': 'nmhahn.github.io',
+'cookies_policy_url': 'url',
+'change_preferences_selector':'#CookiePreferences'
+});});</script>
+<script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-180942008-1"></script>
+<script type="text/plain" cookie-consent="tracking">
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
@@ -2095,8 +2107,12 @@ gtag('config', 'UA-180942008-1');
 <div class="nav-right">
 <a href="../../about.html">Sobre</a>
 <a href="../../CV/NMH_Curriculum_Vitae.pdf">CV</a>
-<span class="nav-dropdown-header">Portfolio</span>
-<span class="nav-dropdown-header">Contato</span>
+<a href="https://linkedin.com/in/nmhahn">
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+<a href="https://github.com/nmhahn">
+<i class="fa fa-github" aria-hidden="true"></i>
+</a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2171,7 +2187,7 @@ gtag('config', 'UA-180942008-1');
   </p>
   <script id="dsq-count-scr" src="https://nmhahn.disqus.com/count.js" async></script>
   <div id="disqus_thread"></div>
-  <script type="text/javascript" cookie-consent="functionality">
+  <script type="text/plain" cookie-consent="functionality">
 var disqus_config = function () {
   this.page.url = 'https://nmhahn.github.io/posts/2021-06-01-graficos-comuns-na-analise-de-dados/';
   this.page.identifier = 'posts/2021-06-01-graficos-comuns-na-analise-de-dados/';
