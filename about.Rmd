@@ -1,67 +1,32 @@
 ---
-title: | 
-  Sobre Mim 
+title: "My Website"
 description: |
-  ![](`r here::here("img","perfil.jpg")`){ width=50% }
+  Welcome to the website. I hope you enjoy it!
+image: "images/me.jpeg"
+links:
+  - label: '<i class="fab fa-twitter fa-3x"></i>'
+    url: "https://twitter.com/nmhahn"
+  - label: '<i class="fab fa-instagram fa-3x"></i>'
+    url: "https://instagram.com/nm_hahn"
+  - label: '<i class="fab fa-github fa-3x"></i>'
+    url: "https://github.com/nmhahn"
+  - label: '<i class="far fa-envelope fa-3x"></i>'
+    url: "mailto:nicolasmahahn@gmail.com"
+  - label: '<i class="fab fa-linkedin-in fa-3x"></i>'
+    url: "https://www.linkedin.com/in/nmhahn/"
+    
+output: postcards::solana
   
-  Meu nome é Nicolas Mathias Hahn e sou estudante do curso de bacharelado em Estatística na Universidade Federal do Rio Grande do Sul (UFRGS). Eu adoro explorar os dados e extrair deles conhecimento que realmente geram valor. Estamos em uma era em que todos produzimos e consumimos dados constantemente, mas do que adianta tudo isso se não utilizarmos a nosso favor? 
+site: distill::distill_website
 ---
 
-<style>
-body {text-align: justify}
-</style>
-
-# Um pouco da minha história
-
-Desde pequeno, fui muito estimulado a desenvolver meu lado analítico e criativo: joguei xadrez, estudei música, aprendi filosofia, um pouco de mitologia, joguei videogame, etc. Jamais perdi contato com nenhuma dessas atividades. No colégio, gostava de praticamente todas as matérias, mas eu tinha minha favorita: **Matemática**!
-
-Na reta final do ensino médio e preparatório para ENEM e Vestibulares, meu objetivo era encontrar um curso (e consequentemente, uma profissão) que me permitisse unir o máximo dessas atividades e conhecimentos de forma útil. Tinha optado, na época, por Psicologia, pois acreditava que seria a forma perfeita de atingir meu objetivo. No entanto, sempre ficava pensativo sobre a falta de contato que teria com as exatas.
-
-Para minha (agradável) surpresa, um professor de português realizou o seguinte comentário antes de iniciar sua aula: "Para quem ainda não decidiu o que vai cursar, a Estatística parece bem promissora, ainda mais com o crescente volume de dados que estamos tendo" (por volta de metade de 2017). Eu, assim como alguns colegas, ficamos curiosos e questionamos. Foi nessa hora que ele deu a melhor explicação com a qual tive contato da área.
-
-> "Todos geramos dados o tempo todo, com nossos celulares, computadores. **Eu gosto de pensar nesses dados todos como um dicionário. É possível extrair muita informação útil dele, mas se eu não souber lê-lo, de nada adianta. Então, o Estatístico é aquele que sabe ler o dicionário**".
-
-# Onde estou
-
-* Cursando o 7º semestre do curso de Estatística na UFRGS;
-* Estagiando na [Aegro](https://aegro.com.br/) na área de Sales Ops.
-
+<b style = "font-weight: 600;"> Nicolas Mathias Hahn </b>
 <br>
-
+Hi! This is going to be my new try to make a website (and put content in it :P). Wish me luck to learn a lot e understand the structures and edit it all in a way that a like. 
+Good Luck!
+<br><br>
+[Posts](blog.html) 📝
 <br>
-<div style='text-align: center;  color: #0085a1'>
-<span itemprop="name" style="font-variant: small-caps; color: #0085a1; font-size: 150%">Nicolas Mathias Hahn</span>
-
-<a style='color: #0085a1' href="mailto:nicolasmahahn@gmail.com" title="Mande um E-mail" class = 'social-icon'><span class="fa-stack fa-lg" aria-hidden="true">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">Email me</span>
-</a>
-<a style='color: #0085a1'href="https://github.com/nmhahn" title="GitHub" class = 'social-icon'>
-  <span class="fa-stack fa-lg" aria-hidden="true">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-  </span>
-  <span class="sr-only">GitHub</span>
-</a>
-<a style='color: #0085a1' href="https://linkedin.com/in/nmhahn" title="LinkedIn" class = 'social-icon'><span class="fa-stack fa-lg" aria-hidden="true">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">LinkedIn</span>
-</a>
-<a style='color: #0085a1' href="https://www.instagram.com/nm_hahn/" title="instagram" class = 'social-icon'><span class="fa-stack fa-lg" aria-hidden="true">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">Instagram</span>
-</a>
-<a style='color: #0085a1' href="https://twitter.com/nmhahn" title="twitter" class = 'social-icon'><span class="fa-stack fa-lg" aria-hidden="true">
-  <i class="fa fa-circle fa-stack-2x"></i>
-  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-</span>
-<span class="sr-only">Twitter</span>
-</a>
-</div>
-
+[About](about.html) 🙋
+<br>
+[Projects](projects.html) 🛠

@@ -1,0 +1,19 @@
+[
+  {
+    "path": "projects/2021-12-31-teste/",
+    "title": "teste",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "nmhahn",
+        "url": {}
+      }
+    ],
+    "date": "2021-12-31",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-12-31T14:33:08-03:00",
+    "input_file": {}
+  }
+]

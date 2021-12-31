@@ -20,26 +20,28 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -48,13 +50,13 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -75,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -83,39 +85,40 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-  <!--radix_placeholder_meta_tags-->
-<title>My Website: Gráficos Comuns na Análise de Dados</title>
 
-<meta property="description" itemprop="description" content="Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado."/>
+  <!--radix_placeholder_meta_tags-->
+<title>My Website: teste</title>
+
+<meta property="description" itemprop="description" content="A short description of the post."/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-06-01"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-06-01"/>
-<meta name="article:author" content="Nicolas Hahn"/>
+<meta property="article:published" itemprop="datePublished" content="2021-12-31"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-12-31"/>
+<meta name="article:author" content="nmhahn"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="My Website: Gráficos Comuns na Análise de Dados"/>
+<meta property="og:title" content="My Website: teste"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado."/>
+<meta property="og:description" content="A short description of the post."/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="My Website"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="My Website: Gráficos Comuns na Análise de Dados"/>
-<meta property="twitter:description" content="Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado."/>
+<meta property="twitter:title" content="My Website: teste"/>
+<meta property="twitter:description" content="A short description of the post."/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Gráficos Comuns na Análise de Dados"]},{"type":"character","attributes":{},"value":["Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Nicolas Hahn"]}]}]},{"type":"character","attributes":{},"value":["06-01-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["teste"]},{"type":"character","attributes":{},"value":["A short description of the post."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["nmhahn"]}]}]},{"type":"character","attributes":{},"value":["2021-12-31"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-1-1.png","graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-2-1.png","graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-3-1.png","graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-4-1.png","graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-5-1.png"]}
+  {"type":"NULL"}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2371,7 +2374,8 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2391,7 +2395,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Gráficos Comuns na Análise de Dados","description":"Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado.","authors":[{"author":"Nicolas Hahn","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-06-01T00:00:00.000-03:00","citationText":"Hahn, 2021"}
+{"title":"teste","description":"A short description of the post.","authors":[{"author":"nmhahn","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-12-31T00:00:00.000-03:00","citationText":"nmhahn, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2420,47 +2424,21 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Gráficos Comuns na Análise de Dados</h1>
+<h1>teste</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado.</p></p>
+<p><p>A short description of the post.</p></p>
 </div>
 
 <div class="d-byline">
-  Nicolas Hahn  
+  nmhahn  
   
-<br/>06-01-2021
+<br/>2021-12-31
 </div>
 
 <div class="d-article">
-<p>Entender os gráficos é muito importante, pois de nada adianta olharmos para eles e não sabermos o que está sendo, de fato, mostrado. Além disso, a visualização de dados veio para ficar, tanto que <em>softwares</em> como <a href="https://powerbi.microsoft.com/pt-br/">PowerBI</a> e <a href="https://www.tableau.com/pt-br">Tableau</a> estão cada vez mais presentes nas empresas. Por quê? Auxiliam na criação de <em>insights</em> e contribuem para a tomada de decisão.</p>
-<p>Existe uma gama de tipos de gráficos, no entanto citarei apenas cinco gráficos básicos que são comuns na hora de analisar os dados. Minha ideia não é destrinchar cada tipo, apenas dar uma noção básica de como cada um funciona. Futuramente, pretendo realizar um post exclusivo para cada tipo.</p>
-<h1 id="gráfico-de-dispersão-scatterplot">Gráfico de Dispersão (<em>scatterplot</em>)</h1>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-1-1.png" width="624" /></p>
-</div>
-<p>A principal utilidade do gráfico de dispersão é o de averiguar a interação entre as variáveis (seja de dependência ou de independência). Acima, por exemplo, podemos notar que conforme a variável <em>x</em> aumenta, a variável <em>y</em> também aumenta.</p>
-<h1 id="histograma">Histograma</h1>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-2-1.png" width="624" /></p>
-</div>
-<p>A grande utilidade do histograma é analisar a distribuição de frequência dos dados. Como assim? Perceba no gráfico exemplo acima que as barras verticais são mais altas ao redor do centro zero (eixo <em>x</em>) e, conforme vamos nos afastando do centro, as barras diminuem, ou seja, os valores são menos frequentes quanto mais nos afastamos do centro.</p>
-<h1 id="boxplot">Boxplot</h1>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-3-1.png" width="624" /></p>
-</div>
-<p>Muito útil para avaliar a distribuição dos dados, além de ser possível compararmos dois ou mais grupos de forma visual. No exemplo acima, estou utilizando o conjunto de dados <a href="https://pt.wikipedia.org/wiki/Conjunto_de_dados_flor_Iris">Iris</a> e avaliando a distribuição da largura da sépala das três espécies - setosa, versicolor e virginica - e, como podemos notar, a sépala da setosa é mais larga do que a das outras espécies comparadas.</p>
-<h1 id="gráfico-de-setores-ou-de-pizza">Gráfico de Setores (ou de Pizza)</h1>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-4-1.png" width="624" /></p>
-</div>
-<p>Muito utilizado para comparar grupos. Os valores de cada categoria (tamanho da fatia da pizza) são proporcionais às respectivas frequências. No exemplo acima, mesmo com a omissão dos números, é possível deduzir que a letra D aparece mais do que todas as outras.</p>
-<h1 id="gráfico-de-barras-horizontal-ou-colunas-vertical">Gráfico de Barras (horizontal) ou Colunas (vertical)</h1>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="graficos-comuns-na-analise-de-dados_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
-</div>
-<p>Basicamente, é uma demostração visual das frequências (contagem) de cada item. Considere o exemplo acima como uma fruteira: ao observar o gráfico, temos que o número de melancias presentes é maior do que o das outras frutas.</p>
-<p>Esses são apenas alguns gráficos e estão entre os mais comuns. Você conhecia eles? Tem algum que você não entendeu? Comente abaixo!</p>
+<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
+<p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

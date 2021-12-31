@@ -1,18 +1,42 @@
 ---
-title: "Blog do Nicão"
-description: |
+title: "Nicolas Mathias Hahn"
+image: "images/me.jpeg"
+links:
+  - label: '<i class="fab fa-twitter fa-2x"></i>'
+    url: "https://twitter.com/nmhahn"
+  - label: '<i class="fab fa-instagram fa-2x"></i>'
+    url: "https://instagram.com/nm_hahn"
+  - label: '<i class="fab fa-github fa-2x"></i>'
+    url: "https://github.com/nmhahn"
+  - label: '<i class="far fa-envelope fa-2x"></i>'
+    url: "mailto:nicolasmahahn@gmail.com"
+  - label: '<i class="fab fa-linkedin-in fa-2x"></i>'
+    url: "https://www.linkedin.com/in/nmhahn/"
+    
+output: postcards::solana
+  
 site: distill::distill_website
-listing: posts
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+<!-- 
+  I changed the 'solana.html' from postcards package
+  - I wanted the image to be rounded-circle and not float-right
+  - before: "<img src="$image$" style="height:15rem" class="rounded float-right">"
+  - after: "<img src="$image$" style="height:15rem" class="rounded-circle float">"
+!--> 
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
 
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+Hi! This is going to be my new try to make a website (and put content in it :P). 
+<br>
+Wish me luck to learn a lot e understand the structures and edit it all in a way that I like. 
+<br>
+Good Luck!
+<br><br>
 
-```
-
+<p class="center">
+📝 [Posts](blog.html) 
+<br>
+🙋 [About](about.html)
+<br>
+🛠 [Projects](projects.html)
+</p>

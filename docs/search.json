@@ -1,20 +1,40 @@
 {
   "articles": [
     {
-      "path": "about.html",
-      "title": "Sobre Mim \n",
-      "description": "![](`r here::here(\"img\",\"perfil.jpg\")`){ width=50% }\n\nMeu nome é Nicolas Mathias Hahn e sou estudante do curso de bacharelado em Estatística na Universidade Federal do Rio Grande do Sul (UFRGS). Eu adoro explorar os dados e extrair deles conhecimento que realmente geram valor. Estamos em uma era em que todos produzimos e consumimos dados constantemente, mas do que adianta tudo isso se não utilizarmos a nosso favor? ",
+      "path": "404.html",
       "author": [],
-      "contents": "\r\n\r\nbody {text-align: justify}\r\nUm pouco da minha história\r\nDesde pequeno, fui muito estimulado a desenvolver meu lado analítico e criativo: joguei xadrez, estudei música, aprendi filosofia, um pouco de mitologia, joguei videogame, etc. Jamais perdi contato com nenhuma dessas atividades. No colégio, gostava de praticamente todas as matérias, mas eu tinha minha favorita: Matemática!\r\nNa reta final do ensino médio e preparatório para ENEM e Vestibulares, meu objetivo era encontrar um curso (e consequentemente, uma profissão) que me permitisse unir o máximo dessas atividades e conhecimentos de forma útil. Tinha optado, na época, por Psicologia, pois acreditava que seria a forma perfeita de atingir meu objetivo. No entanto, sempre ficava pensativo sobre a falta de contato que teria com as exatas.\r\nPara minha (agradável) surpresa, um professor de português realizou o seguinte comentário antes de iniciar sua aula: “Para quem ainda não decidiu o que vai cursar, a Estatística parece bem promissora, ainda mais com o crescente volume de dados que estamos tendo” (por volta de metade de 2017). Eu, assim como alguns colegas, ficamos curiosos e questionamos. Foi nessa hora que ele deu a melhor explicação com a qual tive contato da área.\r\n\r\n“Todos geramos dados o tempo todo, com nossos celulares, computadores. Eu gosto de pensar nesses dados todos como um dicionário. É possível extrair muita informação útil dele, mas se eu não souber lê-lo, de nada adianta. Então, o Estatístico é aquele que sabe ler o dicionário”.\r\n\r\nOnde estou\r\nCursando o 7º semestre do curso de Estatística na UFRGS;\r\nEstagiando na Aegro na área de Sales Ops.\r\n\r\n\r\nNicolas Mathias Hahn\r\n    Email me       GitHub      LinkedIn      Instagram      Twitter \r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-06T13:50:38-03:00"
+      "contents": "\n\nOops! The page you’re looking for can’t be found!\n\n\n\nd-title {\n  display: none;\n}\n\n\n\n\n\n\n",
+      "last_modified": "2021-12-31T14:35:48-03:00"
+    },
+    {
+      "path": "about.html",
+      "title": "My Website",
+      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "author": [],
+      "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          Projects\n          Blog\n          CV\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          My Website\n          \n            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                          \n        \n\n        \n          \n      \n      \n        \n           Nicolas Mathias Hahn   Hi! This is going to be my new try to make a website (and put content in it :P). Wish me luck to learn a lot e understand the structures and edit it all in a way that a like. Good Luck! Posts 📝 About 🙋 Projects 🛠\n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              My Website\n            \n            \n              \n                \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n               Nicolas Mathias Hahn   Hi! This is going to be my new try to make a website (and put content in it :P). Wish me luck to learn a lot e understand the structures and edit it all in a way that a like. Good Luck! Posts 📝 About 🙋 Projects 🛠\n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-12-31T14:35:49-03:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-12-31T14:35:49-03:00"
     },
     {
       "path": "index.html",
-      "title": "Blog do Nicão",
+      "title": "Nicolas Mathias Hahn",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-06T21:38:19-03:00"
+      "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          Projects\n          Blog\n          CV\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          Nicolas Mathias Hahn\n          \n            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                          \n        \n\n        \n          \n      \n      \n        \n          \n          Hi! This is going to be my new try to make a website (and put content in it :P).  Wish me luck to learn a lot e understand the structures and edit it all in a way that I like.  Good Luck! \n          \n          📝 Posts  🙋 About  🛠 Projects\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Nicolas Mathias Hahn\n            \n            \n              \n                \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n              \n              Hi! This is going to be my new try to make a website (and put content in it :P).  Wish me luck to learn a lot e understand the structures and edit it all in a way that I like.  Good Luck! \n              \n              📝 Posts  🙋 About  🛠 Projects\n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2021-12-31T14:35:49-03:00"
+    },
+    {
+      "path": "projects.html",
+      "title": "Projects",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-12-31T14:35:50-03:00"
     }
   ],
-  "collections": ["posts/posts.json"]
+  "collections": ["posts/posts.json", "projects/projects.json"]
 }

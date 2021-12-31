@@ -1,30 +1,20 @@
-name: "nmhahn.github.io"
-title: "NMHahn"
+name: "nmhahn_website"
+title: "My Website"
+theme: theme.css
 description: |
-  Explorando algumas possibilidades com R.
+  My Website
 output_dir: "docs"
 navbar:
   right:
-    - text: "Sobre"
+    - text: "Home"
+      href: index.html
+    - text: "About"
       href: about.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Blog"
+      href: blog.html
     - text: "CV"
-      href: CV/NMH_Curriculum_Vitae.pdf
-    - icon: fa fa-linkedin
-      href: https://linkedin.com/in/nmhahn
-    - icon: fa fa-github
-      href: https://github.com/nmhahn
-base_url: "https://nmhahn.github.io/"
-collections:
-  posts:
-    share: [twitter, linkedin, facebook]
-    disqus:
-      shortname: nmhahn
-      hidden: false
-google_analytics: "UA-180942008-1"
-cookie_consent:
-  style: simple
-  type: express
-  palette: light
-  lang: pt
-  cookies_policy: url
+      href: https://github.com/nmhahn/NMH_CV/blob/master/CV/NMH_Curriculum_Vitae.pdf
+    - icon: far fa-lightbulb
 output: distill::distill_article
