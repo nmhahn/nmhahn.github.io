@@ -1,7 +1,7 @@
 ---
 title: "A Estatística e os Dados: decifrando o diálogo"
 description: |
-  Quando eu entrei no curso de Estatística, uma das primeiras cadeiras que realizei como calouro era chamada de **Estatística Descritiva**. Com o tempo, aprendendo mais sobre a área de dados, entendi que aquela simples cadeira estava, na verdade, me ensinando o funcionamento do nosso mundo.
+  Quando eu entrei no curso de Estatística, uma das primeiras cadeiras que realizei como calouro era chamada de <b>Estatística Descritiva</b>. Com o tempo, aprendendo mais sobre a área de dados, entendi que aquela simples cadeira estava, na verdade, me ensinando o funcionamento do nosso mundo.
 
 author:
   - name: Nicolas Hahn

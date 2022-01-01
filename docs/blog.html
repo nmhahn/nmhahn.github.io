@@ -2185,7 +2185,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border-color: #007859;
   }
 
-  /*-- posts & projects --*/
+  /*-- posts & projects (list) --*/
   .posts-list .posts-list-caption {
      font-family: 'Ubuntu Mono';
      color: white;
@@ -2207,6 +2207,79 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   .posts-list .description h2 {
       font-family: 'Ubuntu Mono';
       color: #007859;
+  }
+
+  /*-- posts & projects (content) --*/
+  d-title h1, .posts-list > h1 {
+      color: #007859 !important;
+  }
+
+  d-byline .byline h3 {
+      color: white;
+  }
+
+  d-byline .byline a {
+      color: #007859;
+  }
+
+  d-byline .byline p {
+      color: #007859;
+  }
+
+  d-article a {
+      color: white;
+  }
+
+  d-article a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+    color: #007859;
+  }
+
+  d-article h1 {
+      color: #007859 !important;
+  }
+
+  d-article h2 {
+      color: #007859 !important;
+  }
+
+  d-article > p, d-article > ul {
+      color: white !important;
+  }
+
+  d-article p {
+      color: #007859;
+  }
+
+  strong {
+      font-weight: bold;
+      color: white;
+  }
+
+  d-article table th, d-article table td {
+      font-size: 15px;
+      padding: 2px 8px;
+      color: white;
+  }
+
+  d-article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  d-article table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  d-article table td {
+    text-align: center !important;
   }</style>
   <style type="text/css">
   /* base style */
@@ -2560,7 +2633,7 @@ function init_posts_list() {
 <div class="description">
 <h2>A Estatística e os Dados: decifrando o diálogo</h2>
 <div class="dt-tags"></div>
-<p>Quando eu entrei no curso de Estatística, uma das primeiras cadeiras que realizei como calouro era chamada de **Estatística Descritiva**. Com o tempo, aprendendo mais sobre a área de dados, entendi que aquela simples cadeira estava, na verdade, me ensinando o funcionamento do nosso mundo.</p>
+<p>Quando eu entrei no curso de Estatística, uma das primeiras cadeiras que realizei como calouro era chamada de &lt;b&gt;Estatística Descritiva&lt;/b&gt;. Com o tempo, aprendendo mais sobre a área de dados, entendi que aquela simples cadeira estava, na verdade, me ensinando o funcionamento do nosso mundo.</p>
 </div>
 </a>
 <a href="posts/2021-06-01-graficos-comuns-na-analise-de-dados/" class="post-preview">
@@ -2594,7 +2667,7 @@ function init_posts_list() {
 <div class="description">
 <h2>Juros Simples ou Compostos Visualize a Diferenca</h2>
 <div class="dt-tags"></div>
-<p>Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: **Matemática Financeira!**</p>
+<p>Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: \*\*Matemática Financeira!\*\*</p>
 </div>
 </a>
 </div>

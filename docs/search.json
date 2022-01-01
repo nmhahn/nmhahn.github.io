@@ -4,7 +4,7 @@
       "path": "404.html",
       "author": [],
       "contents": "\n\nOops! The page you’re looking for can’t be found!\n\n\n\nd-title {\n  display: none;\n}\n\n\n\n\n\n\n",
-      "last_modified": "2021-12-31T14:35:48-03:00"
+      "last_modified": "2022-01-01T00:29:29-03:00"
     },
     {
       "path": "about.html",
@@ -12,28 +12,28 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          Projects\n          Blog\n          CV\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          My Website\n          \n            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                          \n        \n\n        \n          \n      \n      \n        \n           Nicolas Mathias Hahn   Hi! This is going to be my new try to make a website (and put content in it :P). Wish me luck to learn a lot e understand the structures and edit it all in a way that a like. Good Luck! Posts 📝 About 🙋 Projects 🛠\n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              My Website\n            \n            \n              \n                \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n               Nicolas Mathias Hahn   Hi! This is going to be my new try to make a website (and put content in it :P). Wish me luck to learn a lot e understand the structures and edit it all in a way that a like. Good Luck! Posts 📝 About 🙋 Projects 🛠\n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-12-31T14:35:49-03:00"
+      "last_modified": "2022-01-01T00:29:30-03:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-12-31T14:35:49-03:00"
+      "last_modified": "2022-01-01T00:29:30-03:00"
     },
     {
       "path": "index.html",
       "title": "Nicolas Mathias Hahn",
       "author": [],
       "contents": "\n\n          \n          \n          My Website\n          \n          \n          Home\n          About\n          Projects\n          Blog\n          CV\n          \n          \n          \n          ☰\n          \n          \n      \n        \n          Nicolas Mathias Hahn\n          \n            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                            \n                \n                  \n                    \n                  \n                \n              \n                          \n        \n\n        \n          \n      \n      \n        \n          \n          Hi! This is going to be my new try to make a website (and put content in it :P).  Wish me luck to learn a lot e understand the structures and edit it all in a way that I like.  Good Luck! \n          \n          📝 Posts  🙋 About  🛠 Projects\n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Nicolas Mathias Hahn\n            \n            \n              \n                \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n              \n              Hi! This is going to be my new try to make a website (and put content in it :P).  Wish me luck to learn a lot e understand the structures and edit it all in a way that I like.  Good Luck! \n              \n              📝 Posts  🙋 About  🛠 Projects\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2021-12-31T14:35:49-03:00"
+      "last_modified": "2022-01-01T00:29:30-03:00"
     },
     {
       "path": "projects.html",
       "title": "Projects",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-12-31T14:35:50-03:00"
+      "last_modified": "2022-01-01T00:29:31-03:00"
     }
   ],
   "collections": ["posts/posts.json", "projects/projects.json"]

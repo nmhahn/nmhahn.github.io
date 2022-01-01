@@ -72,7 +72,7 @@ a {
   border-color: #007859;
 }
 
-/*-- posts & projects --*/
+/*-- posts & projects (list) --*/
 .posts-list .posts-list-caption {
    font-family: 'Ubuntu Mono';
    color: white;
@@ -94,4 +94,77 @@ a {
 .posts-list .description h2 {
     font-family: 'Ubuntu Mono';
     color: #007859;
+}
+
+/*-- posts & projects (content) --*/
+d-title h1, .posts-list > h1 {
+    color: #007859 !important;
+}
+
+d-byline .byline h3 {
+    color: white;
+}
+
+d-byline .byline a {
+    color: #007859;
+}
+
+d-byline .byline p {
+    color: #007859;
+}
+
+d-article a {
+    color: white;
+}
+
+d-article a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  cursor: pointer;
+  color: #007859;
+}
+
+d-article h1 {
+    color: #007859 !important;
+}
+
+d-article h2 {
+    color: #007859 !important;
+}
+
+d-article > p, d-article > ul {
+    color: white !important;
+}
+
+d-article p {
+    color: #007859;
+}
+
+strong {
+    font-weight: bold;
+    color: white;
+}
+
+d-article table th, d-article table td {
+    font-size: 15px;
+    padding: 2px 8px;
+    color: white;
+}
+
+d-article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+d-article table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+d-article table td {
+  text-align: center !important;
 }

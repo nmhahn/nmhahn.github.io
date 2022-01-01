@@ -1,7 +1,7 @@
 ---
 title: "Juros Simples ou Compostos Visualize a Diferenca"
 description: |
-  Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: **Matemática Financeira!**
+  Muitas pessoas não gostam de matemática, e acreditam que muito do que aprenderam no colégio não usarão na vida. No entanto, independentemente da profissão que cada um optou, existe uma área da matemática que interefere diretamente no nosso dia a dia: \*\*Matemática Financeira!\*\*
 author:
   - name: Nicolas Hahn
     url: {}
@@ -16,7 +16,7 @@ Muitas pessoas não gostam de matemática, e acreditam que muito do que aprender
 Promoções, descontos, parcelamentos, empréstimos, financianciamentos, investimentos. Nosso mundo gira muito em torno desses e outros itens que afetam diretamente nossas compras e vendas - e consequentemente, nosso bolso. Além disso, lidar com bancos e instituições financeiras é recorrente na atualidade e, devido a isso, entender o comportamento dos famosos **JUROS** é importante para que tenhamos uma boa saúde financeira. Portanto, meu povo e minha pova, vou tentar demonstrar para vocês como eles funcionam.
 
 # Juros
-> **Exemplo:** Considere que você solicite um empréstimo de R\\$50,00 para seu amigo. Para convencê-lo a lhe emprestar, você informa que irá pagá-lo com juros de R\\$10,00. Logo, você pagará ao seu amigo o valor de R\\$60,00.
+> **Exemplo:** Considere que você solicite um empréstimo de R\$50,00 para seu amigo. Para convencê-lo a lhe emprestar, você informa que irá pagá-lo com juros de R\$10,00. Logo, você pagará ao seu amigo o valor de R\$60,00.
 
 Basicamente, os **juros** nada mais são do que uma remuneração cobrada pelo empréstimo do dinheiro (ou outro item) - se preferir, considere como uma espécie de "aluguel" do dinheiro. Observando o exemplo, vamos analisar pela fórmula:
 

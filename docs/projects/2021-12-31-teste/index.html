@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["teste_files/anchor-4.2.2/anchor.min.js","teste_files/bowser-1.9.3/bowser.min.js","teste_files/distill-2.2.21/template.v2.js","teste_files/header-attrs-2.11/header-attrs.js","teste_files/jquery-3.6.0/jquery-3.6.0.js","teste_files/jquery-3.6.0/jquery-3.6.0.min.js","teste_files/jquery-3.6.0/jquery-3.6.0.min.map","teste_files/popper-2.6.0/popper.min.js","teste_files/tippy-6.2.7/tippy-bundle.umd.min.js","teste_files/tippy-6.2.7/tippy-light-border.css","teste_files/tippy-6.2.7/tippy.css","teste_files/tippy-6.2.7/tippy.umd.min.js","teste_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2196,7 +2196,7 @@ a {
   border-color: #007859;
 }
 
-/*-- posts & projects --*/
+/*-- posts & projects (list) --*/
 .posts-list .posts-list-caption {
    font-family: 'Ubuntu Mono';
    color: white;
@@ -2218,6 +2218,79 @@ a {
 .posts-list .description h2 {
     font-family: 'Ubuntu Mono';
     color: #007859;
+}
+
+/*-- posts & projects (content) --*/
+d-title h1, .posts-list > h1 {
+    color: #007859 !important;
+}
+
+d-byline .byline h3 {
+    color: white;
+}
+
+d-byline .byline a {
+    color: #007859;
+}
+
+d-byline .byline p {
+    color: #007859;
+}
+
+d-article a {
+    color: white;
+}
+
+d-article a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  cursor: pointer;
+  color: #007859;
+}
+
+d-article h1 {
+    color: #007859 !important;
+}
+
+d-article h2 {
+    color: #007859 !important;
+}
+
+d-article > p, d-article > ul {
+    color: white !important;
+}
+
+d-article p {
+    color: #007859;
+}
+
+strong {
+    font-weight: bold;
+    color: white;
+}
+
+d-article table th, d-article table td {
+    font-size: 15px;
+    padding: 2px 8px;
+    color: white;
+}
+
+d-article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+d-article table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+d-article table td {
+  text-align: center !important;
 }</style>
 <style type="text/css">
 /* base style */
@@ -2437,7 +2510,10 @@ d-appendix d-footnote-list a.footnote-backlink {
 </div>
 
 <div class="d-article">
-<p>Distill is a publication format for scientific and technical writing, native to the web.</p>
+<p color="white">
+Distill
+</p>
+<p>is a publication format for scientific and technical writing, native to the web.</p>
 <p>Learn more about using Distill at <a href="https://rstudio.github.io/distill" class="uri">https://rstudio.github.io/distill</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
