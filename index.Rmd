@@ -22,7 +22,7 @@ site: distill::distill_website
   I changed the 'solana.html' from postcards package
   - I wanted the image to be rounded-circle and not float-right
   - before: "<img src="$image$" style="height:15rem" class="rounded float-right">"
-  - after: "<img src="$image$" style="height:15rem" class="rounded-circle float">"
+  - after: "<img src="$image$" style="height:12rem" class="rounded-circle float">"
 !--> 
 
 

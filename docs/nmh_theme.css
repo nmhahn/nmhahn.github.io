@@ -1,0 +1,205 @@
+
+/*-- importing custom fonts --*/
+/* @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+/*-- global variables --*/
+/*:root {
+  --text-font-family: 'Ubuntu Mono';
+  --text-header: 'Ubuntu Mono';
+  --main-text-color: white;
+  --secondary-text-color: white;
+  --surface: #007859;
+  --background: #262626;
+  --main-link: #007859;
+  --boarder: rgba(255, 255, 255, 0.31);
+  
+} */
+
+
+/*-- header + footer --*/
+.distill-site-header {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #007859;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #007859;
+}
+
+
+
+h1 {
+  font-family: 'Ubuntu Mono';
+  color: #007859;
+}
+
+body, p {
+  font-family: 'Ubuntu Mono';
+  font-size: 18pt;
+  background-color: #262626;
+  color: white;
+}
+
+body {
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: #007859;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  background-color: #262626;
+  color: white;
+  border-color: #007859;
+}
+
+/*-- posts & projects (list) --*/
+.posts-list .posts-list-caption {
+   font-family: 'Ubuntu Mono';
+   color: white;
+}
+
+.posts-list .metadata {
+    color: white;
+    font-family: 'Ubuntu Mono';
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+}
+
+.posts-list .post-preview {
+    border-bottom: 1px solid white;
+}
+
+.posts-list .description p {
+    color: white;
+    font-family: 'Ubuntu Mono';
+}
+
+.posts-list .description h2 {
+    font-family: 'Ubuntu Mono';
+    color: #007859;
+}
+
+/*-- posts & projects (content) --*/
+d-title h1, .posts-list > h1 {
+    color: #007859 !important;
+}
+
+d-byline .byline h3 {
+    color: white;
+}
+
+d-byline .byline a {
+    color: #007859;
+}
+
+d-byline .byline p {
+    color: #007859;
+}
+
+d-byline {
+    border-top: 1px solid white;
+}
+
+d-article a {
+    color: white;
+}
+
+d-article a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  cursor: pointer;
+  color: #007859;
+}
+
+d-article h1 {
+    color: #007859 !important;
+}
+
+d-article h2 {
+    color: #007859 !important;
+}
+
+d-article > p, d-article > ul {
+    color: white !important;
+}
+
+d-article p {
+    color: #007859;
+}
+
+d-article {
+    border-top: 1px solid #007859;
+}
+
+
+strong {
+    font-weight: bold;
+    color: white;
+}
+
+d-article table th, d-article table td {
+    font-size: 15px;
+    padding: 2px 8px;
+    color: white;
+}
+
+d-article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+d-article table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-top: none;
+  border-bottom: none;
+}
+
+d-article table td {
+  text-align: center !important;
+  border-bottom: none;
+}
+
+d-article blockquote {
+    border-left: 2px solid white;
+    color: white;
+}
+
+hr {
+  border-top: 1px solid #007859;
+}
+
+d-article table th {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+d-article table tr:last-of-type td {
+    border-bottom: 1px solid;
+}

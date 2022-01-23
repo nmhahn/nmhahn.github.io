@@ -1,10 +1,11 @@
 name: "nmhahn_website"
 title: "My Website"
-theme: theme.css
+theme: nmh_theme.css
 description: |
   My Website
 output_dir: "docs"
 navbar:
+  search: false
   right:
     - text: "Home"
       href: index.html
@@ -16,5 +17,4 @@ navbar:
       href: blog.html
     - text: "CV"
       href: https://github.com/nmhahn/NMH_CV/blob/master/CV/NMH_Curriculum_Vitae.pdf
-    - icon: far fa-lightbulb
 output: distill::distill_article
