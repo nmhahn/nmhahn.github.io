@@ -1,0 +1,12 @@
+title: NicoDataHub
+description: ""
+url: "https://nicodatahub.com"
+
+google_analytics: G-27Z6M2HKPQ
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+sass:
+  sass_dir: assets/css
