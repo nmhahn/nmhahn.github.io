@@ -8,5 +8,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 sass:
   sass_dir: assets/css
