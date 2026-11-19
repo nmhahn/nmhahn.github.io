@@ -43,7 +43,13 @@ df = pd.read_table(
 df.head()
 ```
 
-![](/assets/posts/2026-10-19-data-types/df_head.png)
+|      | datetime            | year | month    | global_active_power | global_reactive_power | voltage | global_intensity | sub_metering_1 | sub_metering_2 | sub_metering_3 |
+|-----:|:-------------------:|:----:|:--------:|--------------------:|----------------------:|--------:|-----------------:|---------------:|---------------:|---------------:|
+| 0    | 16/12/2006 17:24:00 | 2006 | December | 4.216               | 0.418                 | 234.840 | 18.400           | 0.000          | 1.000          | 17.000         |
+| 1    | 16/12/2006 17:25:00 | 2006 | December | 5.360               | 0.436                 | 233.630 | 23.000           | 0.000          | 1.000          | 16.000         |
+| 2    | 16/12/2006 17:26:00 | 2006 | December | 5.374               | 0.498                 | 233.290 | 23.000           | 0.000          | 2.000          | 17.000         |
+| 3    | 16/12/2006 17:27:00 | 2006 | December | 5.388               | 0.502                 | 233.740 | 23.000           | 0.000          | 1.000          | 17.000         |
+| 4    | 16/12/2006 17:28:00 | 2006 | December | 3.666               | 0.528                 | 235.680 | 15.800           | 0.000          | 1.000          | 17.000         |
 
 The initial dataset occupies **1,100.46 MB of memory**, with most columns consuming more than 100 MB each. This illustrates how the choice of data type representation can affect memory consumption, even when the underlying information is unchanged:
 

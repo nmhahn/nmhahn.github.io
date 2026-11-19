@@ -28,6 +28,17 @@ layout: page
 
 <script>
   (() => {
+    document.querySelectorAll(".blog-post-content table:not(.rouge-table)").forEach((table) => {
+      if (table.parentElement.classList.contains("blog-table-scroll")) {
+        return;
+      }
+
+      const wrapper = document.createElement("div");
+      wrapper.className = "blog-table-scroll";
+      table.parentElement.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+
     const languageNames = {
       bash: "Bash",
       css: "CSS",
