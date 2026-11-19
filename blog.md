@@ -47,7 +47,7 @@ permalink: /blog/
     {% for post in site.posts %}
       {% assign post_categories = post.categories | join: "|" %}
       {% assign search_text = post.title | append: " " | append: post.description | append: " " | append: post_categories | downcase %}
-      {% assign description = post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 %}
+      {% assign description = post.description | default: post.excerpt | strip_html | strip_newlines %}
       {% assign word_count = post.content | strip_html | number_of_words %}
       {% assign reading_minutes = word_count | plus: 199 | divided_by: 200 | at_least: 1 %}
       <article class="blog-card" data-search="{{ search_text | escape }}" data-categories="{{ post_categories | downcase | escape }}">

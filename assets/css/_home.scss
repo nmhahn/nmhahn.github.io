@@ -140,6 +140,10 @@ body.home-body {
   flex-direction: column;
 }
 
+body.home-body .home-card {
+  max-width: 960px;
+}
+
 .home-header {
   margin-bottom: 2.5rem;
   
@@ -234,6 +238,7 @@ body.page-body {
 
   .home-card {
     margin-block: auto;
+    max-width: 1120px;
   }
 }
 
@@ -242,7 +247,7 @@ body.page-body {
 }
 
 .page-prose {
-  max-width: 65ch;
+  max-width: 90ch;
   margin: 0 auto 2.5rem;
   color: var(--color-text);
 

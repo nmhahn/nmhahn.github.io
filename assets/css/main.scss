@@ -290,12 +290,8 @@ main {
   }
 
   .blog-card-description {
-    display: -webkit-box;
     margin: 0.75rem 0 0;
-    overflow: hidden;
     text-align: left;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
   }
 }
 
@@ -351,6 +347,7 @@ main {
     font-size: 2rem;
     line-height: 1.2;
     margin: 0;
+    white-space: nowrap;
   }
 }
 
@@ -675,5 +672,11 @@ main {
     td {
       padding: 0.3rem 0.4rem;
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .blog-post-header h1 {
+    white-space: normal;
   }
 }
