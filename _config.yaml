@@ -17,3 +17,6 @@ kramdown:
 
 sass:
   sass_dir: assets/css
+
+disqus:
+  shortname: nmhahn
