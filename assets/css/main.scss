@@ -376,6 +376,23 @@ main {
     height: auto;
   }
 
+  .notebook-callout {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
+    background: rgba(191, 179, 168, 0.18);
+
+    p {
+      margin: 0;
+      text-align: left;
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+
   blockquote {
     margin: 1.5rem 0;
     padding: 1rem 1.25rem;
